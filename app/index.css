@@ -42,7 +42,9 @@ li {
   color: inherit;
   color: #7A6563;
 }
-
+.nav li {
+  margin-right: 10px;
+}
 button {
   padding: 10px 18px;
 }
@@ -55,6 +57,9 @@ button {
 }
 .space-around {
   justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
 }
 .header-lg {
   font-size: 35px;
@@ -96,6 +101,10 @@ button {
 .bg-light {
   border-radius: 10px;
   background-color: #EFE4DE;
+}
+.bg-dark {
+  border-radius: 10px;
+  background-color: rgb(36, 40, 42);
 }
 .card {
   margin: 10px;
@@ -164,7 +173,10 @@ button {
 .player-inputs .input-light {
   background: rgba(0, 0, 0, 0.02);
 }
-
+.player-inputs .input-dark {
+  color: #dadada;
+  background: rgba(0, 0, 0, 0.03);
+}
 .player-inputs button {
   flex: 1;
   margin-left: 10px;
@@ -182,6 +194,14 @@ button {
   align-items: center;
   cursor: pointer;
   max-width: 200px;
+}
+.light-btn {
+  color: #000;
+  background: #aaa8a8;
+}
+.light-btn:disabled {
+  background: #292929;
+  color: #4a4a4a;
 }
 .dark-btn {
   color: #EFE4DE;
