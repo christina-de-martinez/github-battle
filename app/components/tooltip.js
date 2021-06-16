@@ -7,7 +7,7 @@ const styles = {
     position: 'relative',
     display: 'flex'
   },
-  tooltip: {
+  tip: {
     boxSizing: 'border-box',
     position: 'absolute',
     width: '160px',
@@ -29,7 +29,7 @@ export default function Tooltip ({ text, children }){
     <Hover>
       {(hovering) => (
         <div style={styles.container}>
-        {hovering === true && <div style={styles.tooltip}>{text}</div>}
+        {hovering === true && <div style={styles.tip}>{text}</div>}
         { children }
       </div>
       )}
